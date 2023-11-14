@@ -147,4 +147,7 @@ public class Romain {
 		minus.sEquiper(Equipement.Bouclier);
 		minus.sEquiper(Equipement.Casque);
 	}
+	public int getForce() {
+		return 0;
+	}
 }

@@ -43,6 +43,12 @@ public class Gaulois {
 //	public String toString() {
 //		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 //	}
+	
+	public void boirePotion(int forcePotion){
+		effetPotion = forcePotion;
+		String fp = forcePotion + "";
+		parler("Merci Druide, je sens que ma force est " + fp + " fois décuplée");
+	}
 
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("asterix",8);
@@ -52,6 +58,7 @@ public class Gaulois {
 		Romain minus = new Romain("minus",6);
 		asterix.frapper(minus);
 	}
+	
 	
 	
 }
